@@ -896,7 +896,7 @@ span + .edit-link:before,
 }
 
 .search-toggle:before {
-	color: #fff;
+	/*color: #fff;*/
 	content: "\f400";
 	font-size: 20px;
 	margin-top: 14px;
