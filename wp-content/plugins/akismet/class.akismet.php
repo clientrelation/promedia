@@ -256,6 +256,7 @@ class Akismet {
 	public static function delete_old_comments() {
 		global $wpdb;
 
+<<<<<<< HEAD
 		/**
 		 * Determines how many comments will be deleted in each batch.
 		 *
@@ -273,14 +274,21 @@ class Akismet {
 		$delete_interval = max( 1, intval( $delete_interval ) );
 
 		while ( $comment_ids = $wpdb->get_col( $wpdb->prepare( "SELECT comment_id FROM {$wpdb->comments} WHERE DATE_SUB(NOW(), INTERVAL %d DAY) > comment_date_gmt AND comment_approved = 'spam' LIMIT %d", $delete_interval, $delete_limit ) ) ) {
+=======
+		while( $comment_ids = $wpdb->get_col( $wpdb->prepare( "SELECT comment_id FROM {$wpdb->comments} WHERE DATE_SUB(NOW(), INTERVAL 15 DAY) > comment_date_gmt AND comment_approved = 'spam' LIMIT %d", defined( 'AKISMET_DELETE_LIMIT' ) ? AKISMET_DELETE_LIMIT : 10000 ) ) ) {
+>>>>>>> c69ef1041595524abc7db2b7d51ab45bbd7cd05b
 			if ( empty( $comment_ids ) )
 				return;
 
 			$wpdb->queries = array();
 
+<<<<<<< HEAD
 			foreach ( $comment_ids as $comment_id ) {
 				do_action( 'delete_comment', $comment_id );
 			}
+=======
+			do_action( 'delete_comment', $comment_ids );
+>>>>>>> c69ef1041595524abc7db2b7d51ab45bbd7cd05b
 
 			$comma_comment_ids = implode( ', ', array_map('intval', $comment_ids) );
 
@@ -944,6 +952,7 @@ p {
 		return _http_build_query( $args, '', '&' );
 	}
 
+<<<<<<< HEAD
 	/**
 	 * Log debugging info to the error log.
 	 *
@@ -955,5 +964,10 @@ p {
 		if ( apply_filters( 'akismet_debug_log', defined( 'WP_DEBUG_LOG' ) && WP_DEBUG_LOG ) ) {
 			error_log( print_r( compact( 'akismet_debug' ), true ) );
 		}
+=======
+	public static function log( $akismet_debug ) {
+		if ( defined( 'WP_DEBUG_LOG' ) && WP_DEBUG_LOG )
+			error_log( print_r( compact( 'akismet_debug' ), 1 ) ); //send message to debug.log when in debug mode
+>>>>>>> c69ef1041595524abc7db2b7d51ab45bbd7cd05b
 	}
 }

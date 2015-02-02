@@ -1,9 +1,17 @@
 === Akismet ===
+<<<<<<< HEAD
 Contributors: matt, ryan, andy, mdawaffe, tellyworth, josephscott, lessbloat, eoigal, cfinke, automattic, jgs
 Tags: akismet, comments, spam
 Requires at least: 3.1
 Tested up to: 4.1
 Stable tag: 3.0.4
+=======
+Contributors: matt, ryan, andy, mdawaffe, tellyworth, josephscott, lessbloat, eoigal, cfinke, automattic
+Tags: akismet, comments, spam
+Requires at least: 3.1
+Tested up to: 4.0
+Stable tag: 3.0.2
+>>>>>>> c69ef1041595524abc7db2b7d51ab45bbd7cd05b
 License: GPLv2 or later
 
 Akismet checks your comments against the Akismet Web service to see if they look like spam or not.
@@ -30,6 +38,7 @@ Upload the Akismet plugin to your blog, Activate it, then enter your [Akismet.co
 
 == Changelog ==
 
+<<<<<<< HEAD
 = 3.0.4 =
 *Release Date - 11th December, 2014*
 
@@ -51,12 +60,18 @@ Upload the Akismet plugin to your blog, Activate it, then enter your [Akismet.co
 = 3.0.2 =
 *Release Date - 18th August, 2014*
 
+=======
+= 3.0.2 =
+>>>>>>> c69ef1041595524abc7db2b7d51ab45bbd7cd05b
 * Performance improvements.
 * Fixed a bug that could truncate the comment data being sent to Akismet for checking.
 
 = 3.0.1 =
+<<<<<<< HEAD
 *Release Date - 9th July, 2014*
 
+=======
+>>>>>>> c69ef1041595524abc7db2b7d51ab45bbd7cd05b
 * Removed dependency on PHP's fsockopen function
 * Fix spam/ham reports to work when reported outside of the WP dashboard, e.g., from Notifications or the WP app
 * Remove jQuery dependency for comment form JavaScript
@@ -64,8 +79,11 @@ Upload the Akismet plugin to your blog, Activate it, then enter your [Akismet.co
 * Suspended keys will now result in all comments being put in moderation, not spam.
 
 = 3.0.0 =
+<<<<<<< HEAD
 *Release Date - 15th April, 2014*
 
+=======
+>>>>>>> c69ef1041595524abc7db2b7d51ab45bbd7cd05b
 * Move Akismet to Settings menu
 * Drop Akismet Stats menu
 * Add stats snapshot to Akismet settings
@@ -79,8 +97,11 @@ Upload the Akismet plugin to your blog, Activate it, then enter your [Akismet.co
 * Replace the old discard setting with a new "discard pervasive spam" feature.
 
 = 2.6.0 =
+<<<<<<< HEAD
 *Release Date - 18th March, 2014*
 
+=======
+>>>>>>> c69ef1041595524abc7db2b7d51ab45bbd7cd05b
 * Add ajax paging to the check for spam button to handle large volumes of comments
 * Optimize javascript and add localization support 
 * Fix bug in link to spam comments from right now dashboard widget
@@ -89,22 +110,31 @@ Upload the Akismet plugin to your blog, Activate it, then enter your [Akismet.co
 * Add pre-check for pingbacks, to stop spam before an outbound verification request is made
 
 = 2.5.9 =
+<<<<<<< HEAD
 *Release Date - 1st August, 2013*
 
+=======
+>>>>>>> c69ef1041595524abc7db2b7d51ab45bbd7cd05b
 * Update 'Already have a key' link to redirect page rather than depend on javascript
 * Fix some non-translatable strings to be translatable
 * Update Activation banner in plugins page to redirect user to Akismet config page
 
 = 2.5.8 =
+<<<<<<< HEAD
 *Release Date - 20th January, 2013*
 
+=======
+>>>>>>> c69ef1041595524abc7db2b7d51ab45bbd7cd05b
 * Simplify the activation process for new users
 * Remove the reporter_ip parameter
 * Minor preventative security improvements
 
 = 2.5.7 =
+<<<<<<< HEAD
 *Release Date - 13th December, 2012*
 
+=======
+>>>>>>> c69ef1041595524abc7db2b7d51ab45bbd7cd05b
 * FireFox Stats iframe preview bug
 * Fix mshots preview when using https
 * Add .htaccess to block direct access to files
@@ -114,8 +144,11 @@ Upload the Akismet plugin to your blog, Activate it, then enter your [Akismet.co
 * Fix prepare() warnings in WP 3.5
 
 = 2.5.6 =
+<<<<<<< HEAD
 *Release Date - 26th April, 2012*
 
+=======
+>>>>>>> c69ef1041595524abc7db2b7d51ab45bbd7cd05b
 * Prevent retry scheduling problems on sites where wp_cron is misbehaving
 * Preload mshot previews
 * Modernize the widget code
@@ -127,14 +160,20 @@ Upload the Akismet plugin to your blog, Activate it, then enter your [Akismet.co
 * Improve error messages when verifying an API key
 
 = 2.5.5 =
+<<<<<<< HEAD
 *Release Date - 11th January, 2012*
 
+=======
+>>>>>>> c69ef1041595524abc7db2b7d51ab45bbd7cd05b
 * Add nonce check for comment author URL remove action
 * Fix the settings link
 
 = 2.5.4 =
+<<<<<<< HEAD
 *Release Date - 5th January, 2012*
 
+=======
+>>>>>>> c69ef1041595524abc7db2b7d51ab45bbd7cd05b
 * Limit Akismet CSS and Javascript loading in wp-admin to just the pages that need it
 * Added author URL quick removal functionality
 * Added mShot preview on Author URL hover
@@ -143,14 +182,20 @@ Upload the Akismet plugin to your blog, Activate it, then enter your [Akismet.co
 * Purge old Akismet comment meta data, default of 15 days
 
 = 2.5.3 = 
+<<<<<<< HEAD
 *Release Date - 8th Febuary, 2011*
 
+=======
+>>>>>>> c69ef1041595524abc7db2b7d51ab45bbd7cd05b
 * Specify the license is GPL v2 or later
 * Fix a bug that could result in orphaned commentmeta entries
 * Include hotfix for WordPress 3.0.5 filter issue
 
 = 2.5.2 =
+<<<<<<< HEAD
 *Release Date - 14th January, 2011*
+=======
+>>>>>>> c69ef1041595524abc7db2b7d51ab45bbd7cd05b
 
 * Properly format the comment count for author counts
 * Look for super admins on multisite installs when looking up user roles
@@ -160,7 +205,10 @@ Upload the Akismet plugin to your blog, Activate it, then enter your [Akismet.co
 * Set Akismet stats iframe height to fixed 2500px.  Better to have one tall scroll bar than two side by side.
 
 = 2.5.1 =
+<<<<<<< HEAD
 *Release Date - 17th December, 2010*
+=======
+>>>>>>> c69ef1041595524abc7db2b7d51ab45bbd7cd05b
 
 * Fix a bug that caused the "Auto delete" option to fail to discard comments correctly
 * Remove the comment nonce form field from the 'Akismet Configuration' page in favor of using a filter, akismet_comment_nonce
@@ -179,7 +227,10 @@ Upload the Akismet plugin to your blog, Activate it, then enter your [Akismet.co
 * Hid "flagged by..." notification while on dashboard
 
 = 2.5.0 =
+<<<<<<< HEAD
 *Release Date - 7th December, 2010*
+=======
+>>>>>>> c69ef1041595524abc7db2b7d51ab45bbd7cd05b
 
 * Track comment actions under 'Akismet Status' on the edit comment screen
 * Fix a few remaining deprecated function calls ( props Mike Glendinning ) 
@@ -195,7 +246,10 @@ Upload the Akismet plugin to your blog, Activate it, then enter your [Akismet.co
 * New option, "Use a nonce on the comment form."
 
 = 2.4.0 =
+<<<<<<< HEAD
 *Release Date - 23rd August, 2010*
+=======
+>>>>>>> c69ef1041595524abc7db2b7d51ab45bbd7cd05b
 
 * Spell out that the license is GPLv2
 * Fix PHP warnings
@@ -205,7 +259,10 @@ Upload the Akismet plugin to your blog, Activate it, then enter your [Akismet.co
 * General code clean up
 
 = 2.3.0 =
+<<<<<<< HEAD
 *Release Date - 5th June, 2010*
+=======
+>>>>>>> c69ef1041595524abc7db2b7d51ab45bbd7cd05b
 
 * Fix "Are you sure" nonce message on config screen in WPMU
 * Fix XHTML compliance issue in sidebar widget
@@ -213,12 +270,18 @@ Upload the Akismet plugin to your blog, Activate it, then enter your [Akismet.co
 * Localize the widget title (core ticket #13879)
 
 = 2.2.9 =
+<<<<<<< HEAD
 *Release Date - 2nd June, 2010*
+=======
+>>>>>>> c69ef1041595524abc7db2b7d51ab45bbd7cd05b
 
 * Eliminate a potential conflict with some plugins that may cause spurious reports
 
 = 2.2.8 =
+<<<<<<< HEAD
 *Release Date - 27th May, 2010*
+=======
+>>>>>>> c69ef1041595524abc7db2b7d51ab45bbd7cd05b
 
 * Fix bug in initial comment check for ipv6 addresses
 * Report comments as ham when they are moved from spam to moderation
@@ -228,14 +291,20 @@ Upload the Akismet plugin to your blog, Activate it, then enter your [Akismet.co
 * Better handling of comments by logged-in users
 
 = 2.2.7 =
+<<<<<<< HEAD
 *Release Date - 17th December, 2009*
+=======
+>>>>>>> c69ef1041595524abc7db2b7d51ab45bbd7cd05b
 
 * Add a new AKISMET_VERSION constant
 * Reduce the possibility of over-counting spam when another spam filter plugin is in use
 * Disable the connectivity check when the API key is hard-coded for WPMU
 
 = 2.2.6 =
+<<<<<<< HEAD
 *Release Date - 20th July, 2009*
+=======
+>>>>>>> c69ef1041595524abc7db2b7d51ab45bbd7cd05b
 
 * Fix a global warning introduced in 2.2.5
 * Add changelog and additional readme.txt tags
@@ -243,12 +312,18 @@ Upload the Akismet plugin to your blog, Activate it, then enter your [Akismet.co
 * Support a new WPCOM_API_KEY constant for easier use with WordPress MU
 
 = 2.2.5 =
+<<<<<<< HEAD
 *Release Date - 13th July, 2009*
+=======
+>>>>>>> c69ef1041595524abc7db2b7d51ab45bbd7cd05b
 
 * Include a new Server Connectivity diagnostic check, to detect problems caused by firewalls
 
 = 2.2.4 =
+<<<<<<< HEAD
 *Release Date - 3rd June, 2009*
+=======
+>>>>>>> c69ef1041595524abc7db2b7d51ab45bbd7cd05b
 
 * Fixed a key problem affecting the stats feature in WordPress MU
 * Provide additional blog information in Akismet API calls

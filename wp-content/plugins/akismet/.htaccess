@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Only allow direct access to specific Web-available files.
 
 # Apache 2.2
@@ -31,4 +32,16 @@
 	<IfModule mod_authz_core.c>
 		Require all granted
 	</IfModule>
+=======
+Order Deny,Allow
+Deny from all
+
+<FilesMatch "^(form|akismet)\.(css|js)$">
+	Allow from all
+</FilesMatch>
+
+#allow access to any image
+<FilesMatch "^(.+)\.(png|gif)$">
+	Allow from all
+>>>>>>> c69ef1041595524abc7db2b7d51ab45bbd7cd05b
 </FilesMatch>
